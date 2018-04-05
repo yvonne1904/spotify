@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="TabCell" customModule="Spotifier" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="101" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9G-TE-HML">
+                        <rect key="frame" x="0.0" y="0.0" width="101" height="91"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zMb-yF-Al2">
+                                <rect key="frame" x="28.5" y="26.5" width="44" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zMb-yF-Al2" secondAttribute="height" multiplier="1:1" id="QK0-nd-qVp"/>
+                                    <constraint firstAttribute="width" priority="751" constant="44" id="oGL-9V-9Xy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTISTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGD-wE-GFl">
+                                <rect key="frame" x="8" y="70.5" width="85" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dGD-wE-GFl" secondAttribute="trailing" id="5Z4-TC-qkg"/>
+                            <constraint firstAttribute="bottom" secondItem="dGD-wE-GFl" secondAttribute="bottom" id="RF9-TN-vJH"/>
+                            <constraint firstItem="dGD-wE-GFl" firstAttribute="leading" secondItem="D9G-TE-HML" secondAttribute="leadingMargin" id="Vr3-3A-uLq"/>
+                            <constraint firstItem="dGD-wE-GFl" firstAttribute="top" secondItem="zMb-yF-Al2" secondAttribute="bottom" id="WVT-Rd-O3Q"/>
+                            <constraint firstItem="zMb-yF-Al2" firstAttribute="centerX" secondItem="dGD-wE-GFl" secondAttribute="centerX" id="dEh-0r-JLR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="D9G-TE-HML" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="79Y-N2-qVF"/>
+                <constraint firstAttribute="bottom" secondItem="D9G-TE-HML" secondAttribute="bottom" priority="999" id="wHO-TC-EuD"/>
+                <constraint firstAttribute="trailing" secondItem="D9G-TE-HML" secondAttribute="trailing" priority="999" id="xD6-RU-62t"/>
+                <constraint firstItem="D9G-TE-HML" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yPr-Sc-7fo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="101" height="91"/>
+            <connections>
+                <outlet property="iconView" destination="zMb-yF-Al2" id="lsi-Ug-SIP"/>
+                <outlet property="label" destination="dGD-wE-GFl" id="EzH-7G-ZWZ"/>
+            </connections>
+            <point key="canvasLocation" x="-199.5" y="-62.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
